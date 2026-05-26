@@ -1,0 +1,193 @@
+---
+const roles = [
+  "Standhouder begeleiding",
+  "Parkeerplaats coördinator",
+  "Catering medewerker",
+  "Opbouw en afbraak",
+  "Informatie balie",
+  "Veiligheid en toezicht",
+];
+
+const benefits = [
+  "Maak deel uit van een gezellig team",
+  "Draag bij aan je dorpsgemeenschap",
+  "Gratis eten en drinken",
+  "Leuke herinneringen en vriendschappen",
+];
+---
+
+<section id="vrijwilligers" class="section">
+  <div class="container grid-layout">
+
+    <div class="roles-col animate-on-scroll-left">
+      <div class="icon-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+      </div>
+      <h2>Vrijwilligers</h2>
+      <p>
+        Wil jij onderdeel zijn van een gezellig team dat Floor Feestdagen mogelijk maakt? We zoeken vrijwilligers voor verschillende rollen!
+      </p>
+      <ul class="roles-list" role="list">
+        {roles.map((role) => (
+          <li class="role-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check-icon">
+              <polyline points="9 11 12 14 22 4"></polyline>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+            <span>{role}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="benefits-card animate-on-scroll-right">
+      <h3>Waarom meedoen?</h3>
+      <ul class="benefits-list" role="list">
+        {benefits.map((benefit) => (
+          <li class="benefit-item">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span>{benefit}</span>
+          </li>
+        ))}
+      </ul>
+      <a href="mailto:pr@floorschermerhorn.nl" class="signup-btn">
+        Meld je aan als vrijwilliger
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .section {
+    padding-block: var(--space-section);
+    background-color: var(--clr-bg);
+  }
+
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  @media (min-width: 1024px) {
+    .grid-layout {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .roles-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background: color-mix(in srgb, var(--clr-primary) 15%, transparent);
+    border-radius: var(--radius-lg);
+    color: var(--clr-primary);
+  }
+
+  h2 {
+    color: var(--clr-fg);
+  }
+
+  p {
+    font-size: var(--fs-lg);
+    color: var(--clr-muted-fg);
+  }
+
+  .roles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .role-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: color-mix(in srgb, var(--clr-secondary) 50%, transparent);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+  }
+
+  .check-icon {
+    color: var(--clr-primary);
+    flex-shrink: 0;
+  }
+
+  .benefits-card {
+    background: var(--clr-secondary);
+    border-radius: var(--radius-xl);
+    padding: clamp(2rem, 5vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  h3 {
+    font-size: var(--fs-2xl);
+    color: var(--clr-fg);
+  }
+
+  .benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: var(--fs-lg);
+    font-weight: 500;
+    color: var(--clr-secondary-fg);
+  }
+
+  .benefit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    background: var(--clr-primary);
+    color: var(--clr-primary-fg);
+    border-radius: var(--radius-full);
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  .signup-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-primary);
+    color: var(--clr-primary-fg);
+    font-weight: 600;
+    font-size: var(--fs-lg);
+    padding: 1rem 2rem;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    text-align: center;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .signup-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+</style>

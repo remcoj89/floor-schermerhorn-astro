@@ -1,0 +1,238 @@
+---
+import sponsorsData from '../../data/sponsors.json';
+
+const { hoofdsponsoren, floorExpressSponsoren, floorflyerSponsoren } = sponsorsData;
+---
+
+<section id="sponsoren" class="section">
+  <div class="container">
+
+    <div class="header animate-on-scroll">
+      <h2>Sponsoren</h2>
+      <p>
+        Wilt u bijdragen aan het succes van Floor Feestdagen 2026? Wij zoeken sponsors die ons willen ondersteunen. Als sponsor krijgt u zichtbaarheid en erkenning voor uw bedrijf. Neem contact met ons op voor meer informatie.
+      </p>
+      <a href="mailto:pr@floorschermerhorn.nl" class="contact-btn">Neem contact op</a>
+    </div>
+
+    <div class="sponsors-sections">
+
+      <div class="animate-on-scroll">
+        <div class="divider-title">
+          <span class="divider-line"></span>
+          <h3 class="tier-title tier-primary">Hoofdsponsoren</h3>
+          <span class="divider-line"></span>
+        </div>
+        <ul class="sponsor-grid main-grid" role="list">
+          {hoofdsponsoren.map((sponsor) => (
+            <li class:list={['sponsor-card', { 'has-link': !!sponsor.link }]}>
+              {sponsor.link ? (
+                <a href={sponsor.link} target="_blank" rel="noopener noreferrer" class="card-link">
+                  {sponsor.name}
+                </a>
+              ) : (
+                <span>{sponsor.name}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="animate-on-scroll">
+        <div class="divider-title">
+          <span class="divider-line"></span>
+          <h3 class="tier-title tier-secondary">Floor-Express Sponsoren</h3>
+          <span class="divider-line"></span>
+        </div>
+        <ul class="sponsor-grid main-grid" role="list">
+          {floorExpressSponsoren.map((sponsor) => (
+            <li class:list={['sponsor-card', { 'has-link': !!sponsor.link }]}>
+              {sponsor.link ? (
+                <a href={sponsor.link} target="_blank" rel="noopener noreferrer" class="card-link">
+                  {sponsor.name}
+                </a>
+              ) : (
+                <span>{sponsor.name}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="animate-on-scroll">
+        <div class="divider-title">
+          <span class="divider-line"></span>
+          <h3 class="tier-title tier-muted">Floorflyer Sponsoren</h3>
+          <span class="divider-line"></span>
+        </div>
+        <ul class="sponsor-grid flyer-grid" role="list">
+          {floorflyerSponsoren.map((sponsor) => (
+            <li class:list={['flyer-card', { 'has-link': !!sponsor.link }]}>
+              {sponsor.link ? (
+                <a href={sponsor.link} target="_blank" rel="noopener noreferrer" class="card-link">
+                  {sponsor.name}
+                </a>
+              ) : (
+                <span>{sponsor.name}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section {
+    padding-block: var(--space-section);
+    background-color: var(--clr-muted);
+  }
+
+  .header {
+    text-align: center;
+    max-width: 48rem;
+    margin-inline: auto;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  h2 {
+    color: var(--clr-fg);
+  }
+
+  .header p {
+    font-size: var(--fs-lg);
+    color: var(--clr-muted-fg);
+    margin-inline: auto;
+  }
+
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    background: var(--clr-primary);
+    color: var(--clr-primary-fg);
+    font-weight: 600;
+    font-size: var(--fs-lg);
+    padding: 0.875rem 2rem;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .sponsors-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .divider-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .divider-line {
+    height: 1px;
+    background: var(--clr-border);
+    flex: 1;
+    max-width: 6rem;
+  }
+
+  h3 {
+    font-size: var(--fs-2xl);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .tier-title.tier-primary { color: var(--clr-primary); }
+  .tier-title.tier-secondary { color: var(--clr-fg); }
+  .tier-title.tier-muted { color: var(--clr-muted-fg); font-size: var(--fs-xl); }
+
+  .sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .sponsor-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .sponsor-card {
+    background: var(--clr-card);
+    border: 1px solid color-mix(in srgb, var(--clr-border) 50%, transparent);
+    border-radius: var(--radius-lg);
+    padding: 1rem;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.25rem;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition-fast);
+  }
+
+  .sponsor-card:hover {
+    box-shadow: var(--shadow-md);
+  }
+
+  .sponsor-card span,
+  .flyer-card span {
+    font-weight: 400;
+    color: var(--clr-fg);
+  }
+
+  .card-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--clr-primary-fg);
+    text-align: center;
+  }
+
+  .card-link:hover {
+    color: var(--clr-primary);
+  }
+
+  .flyer-grid {
+    gap: 0.75rem;
+  }
+
+  .flyer-card {
+    background: var(--clr-bg);
+    border: 1px solid color-mix(in srgb, var(--clr-border) 50%, transparent);
+    border-radius: var(--radius-md);
+    padding: 0.75rem;
+    min-height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .flyer-card span {
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    color: var(--clr-muted-fg);
+  }
+</style>
