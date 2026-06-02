@@ -1,15 +1,8 @@
 ---
 import MobileMenu from '../mobileMenu.jsx';
+import content from '../../data/content.json';
 
-const navLinks = [
-  { name: 'Over', href: '/#over' },
-  { name: 'Meedoen', href: '/#floormarkt' },
-  { name: 'Programma', href: '/#programma' },
-  { name: 'Sponsoren', href: '/#sponsoren' },
-  { name: 'Floor-Express', href: '/floor-express' },
-  { name: 'Contact', href: '/#contact' },
-];
-
+const navLinks = content.header.nav;
 const currentPath = Astro.url.pathname;
 ---
 

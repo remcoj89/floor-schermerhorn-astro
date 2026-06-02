@@ -1,19 +1,7 @@
 ---
-const roles = [
-  "Standhouder begeleiding",
-  "Parkeerplaats coördinator",
-  "Catering medewerker",
-  "Opbouw en afbraak",
-  "Informatie balie",
-  "Veiligheid en toezicht",
-];
+import content from '../../data/content.json';
 
-const benefits = [
-  "Maak deel uit van een gezellig team",
-  "Draag bij aan je dorpsgemeenschap",
-  "Gratis eten en drinken",
-  "Leuke herinneringen en vriendschappen",
-];
+const { title, paragraphs, rolesIntro, roles, rolesOutro, benefitsTitle, benefits, tagline, cta } = content.vrijwilligers;
 ---
 
 <section id="vrijwilligers" class="section">
@@ -25,10 +13,9 @@ const benefits = [
           <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
         </svg>
       </div>
-      <h2>Vrijwilligers</h2>
-      <p>
-        Wil jij onderdeel zijn van een gezellig team dat Floor Feestdagen mogelijk maakt? We zoeken vrijwilligers voor verschillende rollen!
-      </p>
+      <h2>{title}</h2>
+      {paragraphs.map((p) => <p>{p}</p>)}
+      <p class="roles-intro">{rolesIntro}</p>
       <ul class="roles-list" role="list">
         {roles.map((role) => (
           <li class="role-item">
@@ -40,10 +27,11 @@ const benefits = [
           </li>
         ))}
       </ul>
+      <p class="roles-outro">{rolesOutro}</p>
     </div>
 
     <div class="benefits-card animate-on-scroll-right">
-      <h3>Waarom meedoen?</h3>
+      <h3>{benefitsTitle}</h3>
       <ul class="benefits-list" role="list">
         {benefits.map((benefit) => (
           <li class="benefit-item">
@@ -56,9 +44,10 @@ const benefits = [
           </li>
         ))}
       </ul>
-      <a href="mailto:pr@floorschermerhorn.nl" class="signup-btn">
-        Meld je aan als vrijwilliger
+      <a href={cta.href} class="signup-btn">
+        {cta.label}
       </a>
+      <p class="tagline">{tagline}</p>
     </div>
 
   </div>
@@ -189,5 +178,24 @@ const benefits = [
   .signup-btn:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+  }
+
+  .roles-intro {
+    font-size: var(--fs-lg);
+    color: var(--clr-muted-fg);
+    margin-bottom: -0.5rem;
+  }
+
+  .roles-outro {
+    font-size: var(--fs-lg);
+    color: var(--clr-primary);
+    font-weight: 600;
+  }
+
+  .tagline {
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    color: var(--clr-primary);
+    text-align: center;
   }
 </style>

@@ -1,4 +1,7 @@
 ---
+import content from '../../data/content.json';
+
+const { title, paragraphs, cta, image, stat } = content.floormarkt;
 ---
 
 <section id="floormarkt" class="section">
@@ -14,20 +17,15 @@
           <path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"></path>
         </svg>
       </div>
-      <h2>Floormarkt</h2>
-      <p>
-        De jaarlijkse Floormarkt in Schermerhorn is hét moment voor standhouders om hun producten te verkopen. Met meer dan 100 standhouders is dit dé plek voor iedereen die iets wil kopen of verkopen. Van kleding tot speelgoed, van huishoudelijke artikelen tot handgemaakte producten. Alles is welkom!
-      </p>
-      <p>
-        Meld je aan als standhouder en wees onderdeel van dit gezellige evenement. De standhouders zijn het hart van Floor Feestdagen. Zonder hen zou dit evenement niet mogelijk zijn. Dus zorg dat je erbij bent!
-      </p>
+      <h2>{title}</h2>
+      {paragraphs.map((p) => <p>{p}</p>)}
       <a
-        href="https://edithhartogevenementen.nl/eventbrite-event/nazomermarkt-schermerhorn/"
+        href={cta.href}
         target="_blank"
         rel="noopener noreferrer"
         class="btn-primary"
       >
-        Meld je aan als standhouder
+        {cta.label}
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <line x1="5" y1="12" x2="19" y2="12"></line>
           <polyline points="12 5 19 12 12 19"></polyline>
@@ -38,14 +36,14 @@
     <div class="image-wrap animate-on-scroll">
       <div class="img-frame">
         <img
-          src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=800&q=80"
-          alt="Gezellige markt met standhouders"
+          src={image.src}
+          alt={image.alt}
           loading="lazy"
         />
       </div>
       <div class="stat-card">
-        <p class="stat-number">100+</p>
-        <p class="stat-label">Standhouders</p>
+        <p class="stat-number">{stat.number}</p>
+        <p class="stat-label">{stat.label}</p>
       </div>
     </div>
 

@@ -1,18 +1,18 @@
 ---
 import sponsorsData from '../../data/sponsors.json';
+import content from '../../data/content.json';
 
 const { hoofdsponsoren, floorExpressSponsoren, floorflyerSponsoren } = sponsorsData;
+const { title, paragraphs, cta } = content.sponsoren;
 ---
 
 <section id="sponsoren" class="section">
   <div class="container">
 
     <div class="header animate-on-scroll">
-      <h2>Sponsoren</h2>
-      <p>
-        Wilt u bijdragen aan het succes van Floor Feestdagen 2026? Wij zoeken sponsors die ons willen ondersteunen. Als sponsor krijgt u zichtbaarheid en erkenning voor uw bedrijf. Neem contact met ons op voor meer informatie.
-      </p>
-      <a href="mailto:pr@floorschermerhorn.nl" class="contact-btn">Neem contact op</a>
+      <h2>{title}</h2>
+      {paragraphs.map((p) => <p>{p}</p>)}
+      <a href={cta.href} class="contact-btn">{cta.label}</a>
     </div>
 
     <div class="sponsors-sections">
@@ -28,10 +28,15 @@ const { hoofdsponsoren, floorExpressSponsoren, floorflyerSponsoren } = sponsorsD
             <li class:list={['sponsor-card', { 'has-link': !!sponsor.link }]}>
               {sponsor.link ? (
                 <a href={sponsor.link} target="_blank" rel="noopener noreferrer" class="card-link">
-                  {sponsor.name}
+                  {sponsor.logo
+                    ? <img src={sponsor.logo} alt={sponsor.name} class="sponsor-logo" loading="lazy" />
+                    : <span>{sponsor.name}</span>
+                  }
                 </a>
               ) : (
-                <span>{sponsor.name}</span>
+                sponsor.logo
+                  ? <img src={sponsor.logo} alt={sponsor.name} class="sponsor-logo" loading="lazy" />
+                  : <span>{sponsor.name}</span>
               )}
             </li>
           ))}
@@ -49,10 +54,15 @@ const { hoofdsponsoren, floorExpressSponsoren, floorflyerSponsoren } = sponsorsD
             <li class:list={['sponsor-card', { 'has-link': !!sponsor.link }]}>
               {sponsor.link ? (
                 <a href={sponsor.link} target="_blank" rel="noopener noreferrer" class="card-link">
-                  {sponsor.name}
+                  {sponsor.logo
+                    ? <img src={sponsor.logo} alt={sponsor.name} class="sponsor-logo" loading="lazy" />
+                    : <span>{sponsor.name}</span>
+                  }
                 </a>
               ) : (
-                <span>{sponsor.name}</span>
+                sponsor.logo
+                  ? <img src={sponsor.logo} alt={sponsor.name} class="sponsor-logo" loading="lazy" />
+                  : <span>{sponsor.name}</span>
               )}
             </li>
           ))}
@@ -67,13 +77,18 @@ const { hoofdsponsoren, floorExpressSponsoren, floorflyerSponsoren } = sponsorsD
         </div>
         <ul class="sponsor-grid flyer-grid" role="list">
           {floorflyerSponsoren.map((sponsor) => (
-            <li class:list={['flyer-card', { 'has-link': !!sponsor.link }]}>
+            <li class:list={['flyer-card', { 'has-link': !!sponsor.link }]} >
               {sponsor.link ? (
                 <a href={sponsor.link} target="_blank" rel="noopener noreferrer" class="card-link">
-                  {sponsor.name}
+                  {sponsor.logo
+                    ? <img src={sponsor.logo} alt={sponsor.name} class="sponsor-logo" loading="lazy" />
+                    : <span>{sponsor.name}</span>
+                  }
                 </a>
               ) : (
-                <span>{sponsor.name}</span>
+                sponsor.logo
+                  ? <img src={sponsor.logo} alt={sponsor.name} class="sponsor-logo" loading="lazy" />
+                  : <span>{sponsor.name}</span>
               )}
             </li>
           ))}
@@ -199,19 +214,27 @@ const { hoofdsponsoren, floorExpressSponsoren, floorflyerSponsoren } = sponsorsD
   }
 
   .card-link {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    font-weight: 700;
-    text-decoration: none;
     color: var(--clr-primary-fg);
+    display: flex;
+    font-weight: 700;
+    height: 100%;
+    justify-content: center;
     text-align: center;
+    text-decoration: none;
+    width: 100%;
   }
 
-  .card-link:hover {
+  .card-link:hover{
     color: var(--clr-primary);
+  }
+
+  .sponsor-logo {
+    max-width: 100%;
+    max-height: 4.5rem;
+    width: auto;
+    height: auto;
+    object-fit: contain;
   }
 
   .flyer-grid {
@@ -219,7 +242,7 @@ const { hoofdsponsoren, floorExpressSponsoren, floorflyerSponsoren } = sponsorsD
   }
 
   .flyer-card {
-    background: var(--clr-bg);
+    background: #ffffff;
     border: 1px solid color-mix(in srgb, var(--clr-border) 50%, transparent);
     border-radius: var(--radius-md);
     padding: 0.75rem;
@@ -228,11 +251,27 @@ const { hoofdsponsoren, floorExpressSponsoren, floorflyerSponsoren } = sponsorsD
     align-items: center;
     justify-content: center;
     text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition-fast);
+  }
+
+  .flyer-card:hover {
+    box-shadow: var(--shadow-md);
   }
 
   .flyer-card span {
     font-size: var(--fs-sm);
     font-weight: 500;
     color: var(--clr-muted-fg);
+  }
+
+  .flyer-card .card-link {
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    color: var(--clr-fg);
+  }
+
+  .flyer-card .card-link:hover {
+    color: var(--clr-primary);
   }
 </style>

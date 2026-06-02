@@ -1,0 +1,148 @@
+{
+  "site": {
+    "name": "Floor Feestdagen",
+    "year": "2026"
+  },
+  "header": {
+    "nav": [
+      { "name": "Over", "href": "/#over" },
+      { "name": "Meedoen", "href": "/#floormarkt" },
+      { "name": "Programma", "href": "/#programma" },
+      { "name": "Sponsoren", "href": "/#sponsoren" },
+      { "name": "Floor-Express", "href": "/floor-express" },
+      { "name": "Contact", "href": "/#contact" }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 Floor Schermerhorn - by",
+    "copyrightLink": { "label": "Westend Digital", "href": "https://www.westend.digital" },
+    "contact": {
+      "heading": "Contact",
+      "email": "info@floorschermerhorn.nl"
+    },
+    "social": {
+      "heading": "Volg ons",
+      "links": [
+        { "label": "Facebook", "href": "https://facebook.com" },
+        { "label": "Instagram", "href": "https://instagram.com" },
+        { "label": "WhatsApp", "href": "https://whatsapp.com" }
+      ]
+    }
+  },
+  "hero": {
+    "badge": "Gratis entree",
+    "title": "Floor Feestdagen",
+    "subtitle": "En dan bedoelen we ook echt alle feestdagen",
+    "date": "12 & 13 september 2026",
+    "location": "Schermerhorn",
+    "image": {
+      "src": "/assets/images/floor-2026-hero-image.webp",
+      "alt": "Festival sfeer"
+    },
+    "ctas": {
+      "primary": { "label": "Bekijk het programma", "href": "/#programma" },
+      "secondary": { "label": "Word sponsor", "href": "/#sponsoren" }
+    }
+  },
+  "programma": {
+    "title": "Floorprogramma",
+    "paragraphs": [
+      "Het programma van Floor Schermerhorn op 12 en 13 september 2026 is nog volop in ontwikkeling, maar één ding kunnen we alvast verklappen: het belooft een feestelijke editie te worden met als thema \"Floor Feestdagen\"!",
+      "Achter de schermen wordt hard gewerkt aan een gezellig en verrassend programma vol activiteiten die helemaal in het teken staan van feest, sfeer en gezelligheid. Hoewel nog niet alles bekend is, staan er al diverse leuke onderdelen op stapel voor jong en oud. Denk aan gezellige markten, muziek, entertainment, leuke kinderactiviteiten en natuurlijk volop feestelijke aankleding in het dorp.",
+      "Met het thema \"Floor Feestdagen\" krijgt het evenement een extra vrolijke en bijzondere uitstraling, waarbij verschillende feestdagen en tradities op creatieve wijze terug zullen komen tijdens het weekend. Bezoekers kunnen rekenen op veel gezelligheid, verrassingen en een warme sfeer zoals alleen Floor in Schermerhorn die kan bieden."
+    ],
+    "days": [
+      {
+        "title": "Vrijdag 12 september",
+        "description": "Opening om 19:00 uur met live muziek en entertainment."
+      },
+      {
+        "title": "Zaterdag 13 september",
+        "description": "Volledige dag met markt, truckershow, kinderkermis en live muziek."
+      }
+    ],
+    "notice": "Houd de komende tijd alle updates goed in de gaten, want er volgt snel meer informatie over het programma. Eén ding is zeker: Floor Feestdagen wordt een weekend om alvast in de agenda te zetten!"
+  },
+  "floorloterij": {
+    "title": "Floorloterij",
+    "paragraphs": [
+      "Op donderdag 10 september 2026 start de verkoop van loten voor de gezellige Floorloterij in Schermerhorn! Met de aankoop van een lot maak je niet alleen kans op mooie prijzen, maar steun je ook de activiteiten rondom de Floor en de gezelligheid in het dorp.",
+      "De Floorloterij staat bekend om haar leuke en verrassende prijzen, geschonken door lokale ondernemers en enthousiaste inwoners. Van cadeaubonnen en streekproducten tot origineleverrassingen er valt voor iedereen iets te winnen. Tijdens de lotenverkoop trekken vrijwilligers door het dorp en ieder lot heeft al een cadeautje wat met het thema van dit jaar te maken heeft. Thema is ‘Floor Feestdagen!’",
+      "Doe mee, steun de Floor én beleef de spanning van de trekking op zaterdag 12 september! Wie weet ga jij dit jaar wel naar huis met één van de fantastische prijzen. Samen maken we van de Floorloterij weer een groot succes in Schermerhorn."
+    ],
+    "badge": "Slechts €2,50 per lot!"
+  },
+  "floormarkt": {
+    "title": "Floormarkt",
+    "paragraphs": [
+      "De jaarlijkse Floormarkt in Schermerhorn is hét moment waarop het dorp tot leven komt. Straten vullen zich met kraampjes, bewoners zetten hun mooiste spullen buiten en overal hangt de gezellige sfeer van ontmoeten, snuffelen en ontdekken. Van vintage vondsten en tweedehands pareltjes tot speelgoed, boeken en handgemaakte creaties — op de Floormarkt is altijd iets verrassends te vinden.",
+      "Terwijl kinderen lachend rondrennen en muziek door de straten klinkt, genieten bezoekers van een kop koffie, een praatje met bekenden en de warme dorpsgezelligheid waar Schermerhorn om bekendstaat. De Floormarkt is meer dan alleen een markt; het is een dag vol sfeer, verbinding en plezier voor jong en oud.",
+      "Of je nu komt om koopjes te scoren, inspiratie op te doen of gewoon gezellig rond te kijken: de Floormarkt op 13 september in Schermerhorn belooft ieder jaar weer een feestelijke belevenis te worden."
+    ],
+    "cta": {
+      "label": "Meld je aan als standhouder",
+      "href": "https://edithhartogevenementen.nl/eventbrite-event/nazomermarkt-schermerhorn/"
+    },
+    "image": {
+      "src": "https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=800&q=80",
+      "alt": "Gezellige markt met standhouders"
+    },
+    "stat": {
+      "number": "100+",
+      "label": "Standhouders"
+    }
+  },
+  "truckershow": {
+    "title": "Truckershow",
+    "paragraphs": [
+      "Tijdens het evenement Floor in Schermerhorn op 12 en 13 september 2026 staat ook de spectaculaire Floor Truckershow weer op het programma! Dit indrukwekkende onderdeel van het weekend trekt ieder jaar veel bekijks van jong en oud. Het terrein vult zich met schitterend gepoetste vrachtwagens, stoere trucks en bijzondere voertuigen uit binnen- en buitenland.",
+      "Bezoekers kunnen de trucks van dichtbij bewonderen, een kijkje nemen in de cabines en kennismaken met de trotse chauffeurs die graag vertellen over hun passie voor transport en techniek. Van klassieke vrachtwagens tot moderne showtrucks met opvallende verlichting en unieke details de Floor Truckershow biedt voor iedere liefhebber iets bijzonders.",
+      "Naast de imposante voertuigen zorgt de gezellige sfeer voor een compleet dagje uit. Muziek, horeca, activiteiten en de levendige ambiance van Floor maken het evenement tot een feestelijk weekend voor het hele gezin. De Floor Truckershow is daarmee uitgegroeid tot één van de grote publiekstrekkers van Floor in Schermerhorn."
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80",
+      "alt": "Truckershow met prachtige vrachtwagens"
+    }
+  },
+  "vrijwilligers": {
+    "title": "Vrijwilligers",
+    "paragraphs": [
+      "Wil jij onderdeel zijn van een gezellig, bruisend en onvergetelijk evenement in Schermerhorn? Dan zoeken wij jou!",
+      "Voor Floor Schermerhorn zijn we op zoek naar enthousiaste vrijwilligers die samen met ons willen zorgen voor een fantastische dag vol sfeer, muziek, gezelligheid en verbinding."
+    ],
+    "rolesIntro": "Of je nu wilt helpen bij:",
+    "roles": [
+      "Op- en afbouw",
+      "Bar of catering",
+      "Ontvangst van bezoekers",
+      "Techniek",
+      "Begeleiding van activiteiten",
+      "Of gewoon graag de handen uit de mouwen steekt…"
+    ],
+    "rolesOutro": "Iedere hulp is welkom én ontzettend waardevol.",
+    "benefitsTitle": "Waarom meedoen?",
+    "benefits": [
+      "Je maakt deel uit van een enthousiast team",
+      "Je ontmoet nieuwe mensen uit de omgeving",
+      "Je draagt bij aan een prachtig lokaal evenement",
+      "En natuurlijk zorgen wij voor gezelligheid, waardering en een goede sfeer"
+    ],
+    "tagline": "Want zonder vrijwilligers… geen feest!",
+    "cta": {
+      "label": "Meld je aan als vrijwilliger",
+      "href": "mailto:pr@floorschermerhorn.nl"
+    }
+  },
+  "sponsoren": {
+    "title": "Sponsoring",
+    "paragraphs": [
+      "Wilt u bijdragen aan het succes van het Floor Nazoemerspektakel in Schermerhorn? Dat kan! Ook dit jaar zijn wij op zoek naar enthousiaste sponsoren die dit gezellige en unieke evenement een warm hart toedragen.",
+      "Met uw steun helpt u mee om van Floor weer een sfeervol weekend vol activiteiten, muziek, entertainment en gezelligheid te maken voor jong en oud. Sponsoren spelen een belangrijke rol in het mogelijk maken van het evenement en krijgen daarnaast mooie zichtbaarheid tijdens het Floor Nazoemerspektakel.",
+      "Samen maken we van Floor in Schermerhorn weer een fantastisch evenement!"
+    ],
+    "cta": {
+      "label": "Neem contact op",
+      "href": "mailto:pr@floorschermerhorn.nl"
+    }
+  }
+}
