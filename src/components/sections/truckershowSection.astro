@@ -35,21 +35,21 @@ const { title, paragraphs, image } = content.truckershow;
 
 <style>
   .section {
-    padding-block: var(--space-section);
     background-color: var(--clr-bg);
+    padding-block: var(--space-section);
   }
 
   .grid-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
     align-items: center;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
   }
 
   @media (min-width: 1024px) {
     .grid-layout {
-      grid-template-columns: 1fr 1fr;
       gap: 4rem;
+      grid-template-columns: 1fr 1fr;
     }
 
     .image-wrap {
@@ -70,16 +70,15 @@ const { title, paragraphs, image } = content.truckershow;
   }
 
   .img-frame {
-    aspect-ratio: 4 / 3;
     border-radius: var(--radius-xl);
-    overflow: hidden;
     box-shadow: var(--shadow-xl);
+    overflow: hidden;
   }
 
   .img-frame img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
+    width: 100%;
   }
 
   .content {
@@ -89,14 +88,14 @@ const { title, paragraphs, image } = content.truckershow;
   }
 
   .icon-wrap {
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    width: 4rem;
-    height: 4rem;
     background: color-mix(in srgb, var(--clr-primary) 15%, transparent);
     border-radius: var(--radius-lg);
     color: var(--clr-primary);
+    display: inline-flex;
+    height: 4rem;
+    justify-content: center;
+    width: 4rem;
   }
 
   h2 {
@@ -104,7 +103,7 @@ const { title, paragraphs, image } = content.truckershow;
   }
 
   p {
-    font-size: var(--fs-lg);
     color: var(--clr-muted-fg);
+    font-size: var(--fs-lg);
   }
 </style>

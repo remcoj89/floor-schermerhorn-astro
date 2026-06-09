@@ -53,11 +53,11 @@
     ],
     "days": [
       {
-        "title": "Vrijdag 12 september",
-        "description": "Opening om 19:00 uur met live muziek en entertainment."
+        "title": "Zaterdag 12 september",
+        "description": "Opening met buurtspellen, een dorpsmaaltijd en gezellige dweilbands."
       },
       {
-        "title": "Zaterdag 13 september",
+        "title": "Zondag 13 september",
         "description": "Volledige dag met markt, truckershow, kinderkermis en live muziek."
       }
     ],
@@ -70,7 +70,7 @@
       "De Floorloterij staat bekend om haar leuke en verrassende prijzen, geschonken door lokale ondernemers en enthousiaste inwoners. Van cadeaubonnen en streekproducten tot origineleverrassingen er valt voor iedereen iets te winnen. Tijdens de lotenverkoop trekken vrijwilligers door het dorp en ieder lot heeft al een cadeautje wat met het thema van dit jaar te maken heeft. Thema is ‘Floor Feestdagen!’",
       "Doe mee, steun de Floor én beleef de spanning van de trekking op zaterdag 12 september! Wie weet ga jij dit jaar wel naar huis met één van de fantastische prijzen. Samen maken we van de Floorloterij weer een groot succes in Schermerhorn."
     ],
-    "badge": "Slechts €2,50 per lot!"
+    "badge": "Slechts €3 per lot of 2 lootjes voor € 5"
   },
   "floormarkt": {
     "title": "Floormarkt",
@@ -100,7 +100,7 @@
       "Naast de imposante voertuigen zorgt de gezellige sfeer voor een compleet dagje uit. Muziek, horeca, activiteiten en de levendige ambiance van Floor maken het evenement tot een feestelijk weekend voor het hele gezin. De Floor Truckershow is daarmee uitgegroeid tot één van de grote publiekstrekkers van Floor in Schermerhorn."
     ],
     "image": {
-      "src": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80",
+      "src": "/assets/images/truckshow-2026.webp",
       "alt": "Truckershow met prachtige vrachtwagens"
     }
   },
@@ -112,11 +112,11 @@
     ],
     "rolesIntro": "Of je nu wilt helpen bij:",
     "roles": [
-      "Op- en afbouw",
       "Bar of catering",
-      "Ontvangst van bezoekers",
-      "Techniek",
       "Begeleiding van activiteiten",
+      "Lotenverkopers",
+      "Op- en afbouw",
+      "Techniek",
       "Of gewoon graag de handen uit de mouwen steekt…"
     ],
     "rolesOutro": "Iedere hulp is welkom én ontzettend waardevol.",
