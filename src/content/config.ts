@@ -7,6 +7,7 @@ const floorExpress = defineCollection({
     description: z.string(),
     date: z.string(),
     image: z.string(),
+    headerImage: z.string().optional(),
   }),
 });
 

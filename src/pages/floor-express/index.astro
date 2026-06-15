@@ -3,8 +3,18 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/baseLayout.astro';
 import NewsCard from '../../components/ui/newsCard.astro';
 
+const dutchMonths = [
+  'januari', 'februari', 'maart', 'april', 'mei', 'juni',
+  'juli', 'augustus', 'september', 'oktober', 'november', 'december',
+];
+
+function parseDate(date: string) {
+  const [month, year] = date.toLowerCase().split(' ');
+  return new Date(Number(year), dutchMonths.indexOf(month));
+}
+
 const articles = await getCollection('floor-express');
-const sorted = articles.sort((a, b) => b.data.date.localeCompare(a.data.date));
+const sorted = articles.sort((a, b) => parseDate(b.data.date).getTime() - parseDate(a.data.date).getTime());
 ---
 
 <BaseLayout

@@ -16,6 +16,9 @@
         "image": {
           "type": "string"
         },
+        "headerImage": {
+          "type": "string"
+        },
         "$schema": {
           "type": "string"
         }
