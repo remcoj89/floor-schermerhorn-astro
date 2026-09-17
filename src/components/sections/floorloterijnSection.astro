@@ -1,7 +1,7 @@
 ---
 import content from '../../data/content.json';
 
-const { title, paragraphs, badge } = content.floorloterij;
+const { title, paragraphs, badge, resultsTitle, resultsIntro, results, pickup, thanks } = content.floorloterij;
 ---
 
 <section id="floorloterij" class="section">
@@ -21,6 +21,33 @@ const { title, paragraphs, badge } = content.floorloterij;
 
       <div class="price-badge">{badge}</div>
 
+    </div>
+
+    <div class="results-block animate-on-scroll">
+      <h3>{resultsTitle}</h3>
+      <p class="results-intro">{resultsIntro}</p>
+
+      <ol class="results-list">
+        {results.map((r) => (
+          <li class="result-item">
+            <span class="result-number">{r.numbers}</span>
+            <span class="result-text">
+              {r.prize}
+              {r.sponsor && <span class="result-sponsor">beschikbaar gesteld door {r.sponsor}</span>}
+            </span>
+          </li>
+        ))}
+      </ol>
+
+      <div class="pickup">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <p>{pickup}</p>
+      </div>
+
+      <p class="thanks">{thanks}</p>
     </div>
   </div>
 </section>
@@ -74,5 +101,112 @@ const { title, paragraphs, badge } = content.floorloterij;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-md);
     transform: rotate(2deg);
+  }
+
+  .results-block {
+    max-width: 48rem;
+    margin: var(--space-xl) auto 0;
+    background: var(--clr-card);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-lg);
+    text-align: center;
+  }
+
+  .results-block h3 {
+    color: var(--clr-fg);
+    margin-bottom: 0.75rem;
+  }
+
+  .results-intro {
+    font-size: var(--fs-base);
+    color: color-mix(in srgb, var(--clr-secondary-fg) 80%, transparent);
+    margin-inline: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .result-item {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--clr-secondary);
+    border-radius: var(--radius-md);
+  }
+
+  .result-number {
+    flex-shrink: 0;
+    min-width: 3.5rem;
+    text-align: center;
+    font-family: var(--ff-heading);
+    font-weight: 700;
+    color: var(--clr-primary-fg);
+    background: var(--clr-primary);
+    border-radius: var(--radius-full);
+    padding: 0.25rem 0.5rem;
+    font-size: var(--fs-sm);
+  }
+
+  .result-text {
+    color: var(--clr-fg);
+    font-size: var(--fs-sm);
+  }
+
+  .result-sponsor {
+    display: block;
+    color: var(--clr-muted-fg);
+    font-size: var(--fs-sm);
+  }
+
+  .pickup {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    text-align: left;
+    background: var(--clr-secondary);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .pickup svg {
+    flex-shrink: 0;
+    color: var(--clr-primary);
+    margin-top: 0.15rem;
+  }
+
+  .pickup p {
+    font-size: var(--fs-base);
+    color: var(--clr-fg);
+    max-width: none;
+  }
+
+  .thanks {
+    font-size: var(--fs-sm);
+    color: var(--clr-muted-fg);
+    margin-inline: auto;
+  }
+
+  @media (min-width: 640px) {
+    .result-item {
+      align-items: center;
+    }
+
+    .result-sponsor {
+      display: inline;
+    }
+
+    .result-sponsor::before {
+      content: ' — ';
+    }
   }
 </style>

@@ -3,6 +3,9 @@
     "name": "Floor Feestdagen",
     "year": "2026"
   },
+  "themeAnnouncement": {
+    "text": "Het nieuwe thema voor 11 en 12 september 2027: <strong>Floor in de sneeuw</strong>"
+  },
   "header": {
     "nav": [
       { "name": "Over", "href": "/#over" },
@@ -47,18 +50,47 @@
   "programma": {
     "title": "Floorprogramma",
     "paragraphs": [
-      "Het programma van Floor Schermerhorn op 12 en 13 september 2026 is nog volop in ontwikkeling, maar één ding kunnen we alvast verklappen: het belooft een feestelijke editie te worden met als thema \"Floor Feestdagen\"!",
-      "Achter de schermen wordt hard gewerkt aan een gezellig en verrassend programma vol activiteiten die helemaal in het teken staan van feest, sfeer en gezelligheid. Hoewel nog niet alles bekend is, staan er al diverse leuke onderdelen op stapel voor jong en oud. Denk aan gezellige markten, muziek, entertainment, leuke kinderactiviteiten en natuurlijk volop feestelijke aankleding in het dorp.",
-      "Met het thema \"Floor Feestdagen\" krijgt het evenement een extra vrolijke en bijzondere uitstraling, waarbij verschillende feestdagen en tradities op creatieve wijze terug zullen komen tijdens het weekend. Bezoekers kunnen rekenen op veel gezelligheid, verrassingen en een warme sfeer zoals alleen Floor in Schermerhorn die kan bieden."
+      "Donderdag 10 september 18:00. start de verkoop van loten voor de gezellige Floorloterij in Schermerhorn! Met de aankoop van een lot maak je niet alleen kans op mooie prijzen, maar steun je ook de activiteiten rondom de Floor en de gezelligheid in het dorp."
     ],
     "days": [
       {
         "title": "Zaterdag 12 september",
-        "description": "Opening met buurtspellen, een dorpsmaaltijd en gezellige dweilbands."
+        "description": [
+          "<strong>14:30:</strong> binnenrijden truckshow",
+          "<strong>15:30:</strong> buurt spellen",
+          "<strong>17:00:</strong> uitslag verloting, rad van avontuur en zonnebloemgame (Floortent)",
+          "<strong>17:30:</strong> dorpsmaaltijd",
+          "<strong>19:30:</strong> kinderdisco",
+          "<strong>20:30:</strong> speurtocht",
+          "<strong>20:30:</strong> muziek door het dorp"
+        ]
       },
       {
         "title": "Zondag 13 september",
-        "description": "Volledige dag met markt, truckershow, kinderkermis en live muziek."
+        "description": [
+          "<strong>10:00:</strong> kerkdienst",
+          "<strong>10:45:</strong> Troubadour van Grote Kerk naar Floortent",
+          "<strong>11:00:</strong> muziek bij de tent",
+          "<strong>11:30:</strong> kinderplaybackshow",
+          "<strong>12:30:</strong> bingo",
+          "<strong>13:30:</strong> leeuwendans",
+          "<strong>14:30:</strong> The Masked Singer",
+          "<strong>16:00:</strong> Slotfeest met coverband 2MF"
+        ]
+      },
+      {
+        "title": "Zondag Doorlopend",
+        "description": [
+          "<strong>Tussendoor</strong> Rad van Avontuur",
+          "<strong>11:00 - 16:00</strong> Markt Oosteinde en Zwetstraat",
+          "<strong>11:00 - 16:00</strong> Herinner je Schermerhorn (de Horn)",
+          "<strong>11:00 - 17:00</strong> Minitruckers (Gymzaal)",
+          "<strong>11:00 - 17:00</strong> Lego auto’s (Oosteinde)",
+          "<strong>11:00 - 17:00</strong> Vrachtwagen show (Grote kerk en Zuidje)",
+          "<strong>12:00 - 16:00</strong> Pannenkoekenparty (bij Floorveld)",
+          "<strong>12:00 - 17:00</strong> Kinderkermis (Floorveld)",
+          "<strong>12:30 - 19:00</strong> Foodtrucks (Floorveld)"
+        ]
       }
     ],
     "notice": "Houd de komende tijd alle updates goed in de gaten, want er volgt snel meer informatie over het programma. Eén ding is zeker: Floor Feestdagen wordt een weekend om alvast in de agenda te zetten!"
@@ -70,14 +102,39 @@
       "De Floorloterij staat bekend om haar leuke en verrassende prijzen, geschonken door lokale ondernemers en enthousiaste inwoners. Van cadeaubonnen en streekproducten tot origineleverrassingen er valt voor iedereen iets te winnen. Tijdens de lotenverkoop trekken vrijwilligers door het dorp en ieder lot heeft al een cadeautje wat met het thema van dit jaar te maken heeft. Thema is ‘Floor Feestdagen!’",
       "Doe mee, steun de Floor én beleef de spanning van de trekking op zaterdag 12 september! Wie weet ga jij dit jaar wel naar huis met één van de fantastische prijzen. Samen maken we van de Floorloterij weer een groot succes in Schermerhorn."
     ],
-    "badge": "Slechts €3 per lot of 2 lootjes voor € 5"
+    "badge": "Slechts €3 per lot of 2 lootjes voor € 5",
+    "resultsTitle": "Uitslag Floorloterij",
+    "resultsIntro": "Zaterdagmiddag zijn er loten getrokken van de Floorloterij. De uitslag is als volgt:",
+    "results": [
+      { "numbers": "755", "prize": "Pizzarette", "sponsor": "Stekelbos caravans Oterleek" },
+      { "numbers": "822", "prize": "Dinerbon €50,=", "sponsor": "Het genot van Grootschermer" },
+      { "numbers": "895", "prize": "Tablet met hoes en stekker", "sponsor": "GreenMillpc Schermerhorn" },
+      { "numbers": "307", "prize": "Reiskoffer" },
+      { "numbers": "344", "prize": "2 kaarten voor de première van Nieuw Leven" },
+      { "numbers": "46", "prize": "Draagbare BBQ en koeltas" },
+      { "numbers": "101", "prize": "Mrs Pillow kussen", "sponsor": "Mrs Pillow Stompetoren" },
+      { "numbers": "497", "prize": "Kerststol" },
+      { "numbers": "280", "prize": "Wireless travel headset", "sponsor": "GreenMillpc Schermerhorn" },
+      { "numbers": "4 + 269", "prize": "Noodradio", "sponsor": "GreenMillpc Schermerhorn" },
+      { "numbers": "70 + 760", "prize": "Paaspakketje" },
+      { "numbers": "330", "prize": "Kappersbon", "sponsor": "Bij Jolien Schermerhorn" },
+      { "numbers": "24", "prize": "Laptoptas", "sponsor": "GreenMillpc Schermerhorn" },
+      { "numbers": "820", "prize": "Oudejaarspakket Sporting-S" },
+      { "numbers": "211", "prize": "Tulband" },
+      { "numbers": "279", "prize": "Massagebon", "sponsor": "Harry van Etten" },
+      { "numbers": "897", "prize": "Externe harde schijf", "sponsor": "GreenMillpc Schermerhorn" },
+      { "numbers": "355", "prize": "USB-kabel", "sponsor": "GreenMillpc Schermerhorn" }
+    ],
+    "pickup": "Prijzen zijn af te halen bij GreenMillpc, Oosteinde 17. Hier staan ook de kaarten met bovenstaande uitslagen op het raam.",
+    "thanks": "We bedanken alle sponsors die prijzen beschikbaar hebben gesteld voor deze loterij. Wilt u aan deze sponsors denken bij uw aankopen? Zij dachten ook aan ons!"
   },
   "floormarkt": {
     "title": "Floormarkt",
     "paragraphs": [
-      "De jaarlijkse Floormarkt in Schermerhorn is hét moment waarop het dorp tot leven komt. Straten vullen zich met kraampjes, bewoners zetten hun mooiste spullen buiten en overal hangt de gezellige sfeer van ontmoeten, snuffelen en ontdekken. Van vintage vondsten en tweedehands pareltjes tot speelgoed, boeken en handgemaakte creaties — op de Floormarkt is altijd iets verrassends te vinden.",
+      "De jaarlijkse Floormarkt in Schermerhorn is hét moment waarop het dorp tot leven komt. Straten vullen zich met kraampjes, bewoners zetten hun mooiste spullen buiten en overal hangt de gezellige sfeer van ontmoeten, snuffelen en ontdekken. Van vintage vondsten en tweedehands pareltjes tot speelgoed, boeken en handgemaakte creaties op de Floormarkt is altijd iets verrassends te vinden.",
       "Terwijl kinderen lachend rondrennen en muziek door de straten klinkt, genieten bezoekers van een kop koffie, een praatje met bekenden en de warme dorpsgezelligheid waar Schermerhorn om bekendstaat. De Floormarkt is meer dan alleen een markt; het is een dag vol sfeer, verbinding en plezier voor jong en oud.",
-      "Of je nu komt om koopjes te scoren, inspiratie op te doen of gewoon gezellig rond te kijken: de Floormarkt op 13 september in Schermerhorn belooft ieder jaar weer een feestelijke belevenis te worden."
+      "Of je nu komt om koopjes te scoren, inspiratie op te doen of gewoon gezellig rond te kijken: de Floormarkt op 13 september in Schermerhorn belooft ieder jaar weer een feestelijke belevenis te worden.",
+      "Tijdens de Floormarkt is er ook ruimte voor een vrijmarkt zoals het op de nationale feestdag Koningsdag gebruikelijk is. Iedereen is welkom, maar geef je wel even op voor een plekje. Zo kunnen wij dan een goede indeling maken. Opgeven kan door een mail te sturen naar: <a href=\"mailto:pr@floorschermerhorn.nl\" style=\"color: var(--clr-primary); text-decoration: underline;\">pr@floorschermerhorn.nl</a>"
     ],
     "cta": {
       "label": "Meld je aan als standhouder",
@@ -86,10 +143,6 @@
     "image": {
       "src": "https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=800&q=80",
       "alt": "Gezellige markt met standhouders"
-    },
-    "stat": {
-      "number": "100+",
-      "label": "Standhouders"
     }
   },
   "truckershow": {
@@ -102,6 +155,15 @@
     "image": {
       "src": "/assets/images/truckshow-2026.webp",
       "alt": "Truckershow met prachtige vrachtwagens"
+    }
+  },
+  "zonnebloemCompetitie": {
+    "title": "Zonnebloem Competitie",
+    "paragraphs": [
+      "Wie heeft de hoogste zonnebloem van Schermerhorn? Afgelopen maanden heeft de zon uitbundig geschenen en zijn de zaadjes tot reuze bloemen uit de grond geschoten. Maar wie heeft de hoogste? Dat komt een vakkundige jury bepalen door uw zonnebloem op te meten en er een foto van te maken. Ie dan de hoogste heeft wordt op zaterdag 12 september om 17.00 uur duidelijk in de Floortent tijdens de prijsuitreiking. U kan alleen meedoen aan deze wedstrijd door zich op te geven vóór 5 september via <a href=\"mailto:pr@floorschermerhorn.nl\" style=\"color: var(--clr-primary); text-decoration: underline;\">pr@floorschermerhorn.nl</a>"],
+    "image": {
+      "src": "/assets/images/cees-met-zonnebloem.webp",
+      "alt": "Cees met zonnebloem"
     }
   },
   "vrijwilligers": {
@@ -131,6 +193,10 @@
     "cta": {
       "label": "Meld je aan als vrijwilliger",
       "href": "mailto:pr@floorschermerhorn.nl"
+    },
+    "image": {
+      "src": "/assets/images/floor-comite-2026.jpeg",
+      "alt": "Vrijwilligers in actie"
     }
   },
   "sponsoren": {

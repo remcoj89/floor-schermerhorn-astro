@@ -2,7 +2,6 @@
   "hoofdsponsoren": [
     { "name": "De Lange B.V.", "link": "https://www.delangebv.nl/", "logo": "/assets/logos/logo-de-lange-bv.webp" },
     { "name": "PCS Fietsspeciaalzaak", "link": "https://www.pcsfietsen.nl/", "logo": "/assets/logos/logo-pcs-fietsspecialist.webp" },
-    { "name": "ToekomstGroep", "link": "https://www.toekomstgroep.nl/", "logo": "/assets/logos/logo-toekomst-groep.webp" },
     { "name": "Traploper Specialist", "link": "https://traploperspecialist.nl/", "logo": "/assets/logos/logo-traploper-specialist.webp" },
     { "name": "RH Bouwbedrijf", "link": "https://www.rhbouwbedrijf.nl/", "logo": "/assets/logos/logo-rh-bouw-bedrijf.webp" },
     { "name": "Rogier Makelaardij", "link": "https://www.rogiermakelaardij.nl/", "logo": "/assets/logos/logo-rogier-makelaardij.webp" },
@@ -19,20 +18,25 @@
     { "name": "GreenMill PC", "link": "https://www.greenmillpc.nl/", "logo": "/assets/logos/logo-green-mill-pc.webp" },
     { "name": "Warnaar Uitvaartverzorging", "link": "https://warnaaruitvaartverzorging.nl/", "logo": "/assets/logos/logo-warnaar-uitvaartverzorging.webp" },
     { "name": "Photos By Fleur Maartje", "link": "https://www.photosbyfleurmaartje.nl/", "logo": "/assets/logos/logo-photos-by-fleur-maartje.webp" },
-    { "name": "Ja-Netjes Geregeld", "link": "https://www.ja-netjesgeregeld.nl/", "logo": "/assets/logos/logo-ja-netjes-geregeld.webp" }
+    { "name": "Ja-Netjes Geregeld", "link": "https://www.ja-netjesgeregeld.nl/", "logo": "/assets/logos/logo-ja-netjes-geregeld.webp" },
+    { "name": "Serrina Beauty & Health", "link": "https://www.serrina.nl/", "logo": "/assets/logos/logo-serrina-beauty-health.webp" },
+    { "name": "De Hoge Waerder ", "link": "https://www.dehoogewaerder.nl/", "logo": "/assets/logos/logo-dhw.webp" },
+    { "name": "Piet van der Burg Bouwbedrijf Schermerhorn", "link": "", "logo": "/assets/logos/logo-piet-van-der-burg.webp" },
+    { "name": "Bak Alkmaar", "link": "https://www.bakreizen.nl/", "logo": "/assets/logos/logo-bak-alkmaar.webp" }
   ],
   "floorExpressSponsoren": [
     { "name": "Serrina Beauty & Health", "link": "https://www.serrina.nl/", "logo": "" },
     { "name": "Stichting Hennie en Piet Glijn", "link": "https://hennieenpietglijn.nl/", "logo": "" },
     { "name": "Massagepraktijk Marjon van Etten Schermerhorn", "link": "", "logo": "" },
+    { "name": "Kim Pressed", "link": "https://www.kimpressed.nl/", "logo": "" },
+    { "name": "Civion", "link": "https://www.civionbv.nl/", "logo": "" },
     { "name": "Kelly Haar & Make-up", "link": "https://kellyhaarenmakeup.nl/", "logo": "" }
   ],
   "floorflyerSponsoren": [
     { "name": "Westend Digital", "link": "https://www.westend.digital", "logo": "" },
-    { "name": "Piet van der Burg Bouwbedrijf Schermerhorn", "link": "", "logo": "" },
     { "name": "Fair Hondentrimsalon Schermerhorn", "link": "", "logo": "" },
     { "name": "Klinkhamers Klusbedrijf Schermerhorn", "link": "https://www.klussenbedrijfmklinkhamer.nl/", "logo": "" },
-    { "name": "Fox Kantoorautomatisering De Gorm", "link": "https://www.foxtechnoservice.nl/", "logo": "" },
+    { "name": "FOX automatisering De Goorn", "link": "https://www.foxtechnoservice.nl/", "logo": "" },
     { "name": "AIM Las en montage", "link": "https://www.aim-montage.nl/", "logo": "" },
     { "name": "Gemeente Alkmaar", "link": "https://www.alkmaar.nl/", "logo": "" },
     { "name": "Mijse sporthal", "link": "https://www.svsportings.nl/", "logo": "" },
@@ -43,12 +47,11 @@
     { "name": "Veehandel Klaver Schermerhorn", "link": "https://www.transportbedrijfklaver.nl/", "logo": "" },
     { "name": "Transportbedrijf C&J de Vries Schermerhorn", "link": "https://c-jdevriestransport.nl/", "logo": "" },
     { "name": "Warm Obdam", "link": "https://wijzijnwarm.nl/", "logo": "" },
-    { "name": "Welkoop Noord Scharwoude", "link": "https://www.welkoop.nl/winkels/noord-scharwoude", "logo": "" },
+    { "name": "Welkoop Middenbeemster", "link": "https://www.welkoop.nl/winkels/middenbeemster", "logo": "" },
+      { "name": "Kim Pressed", "link": "https://www.kimpressed.nl/", "logo": "" },
     { "name": "In balans Personal training Avenhorn", "link": "https://ibpt.nl/", "logo": "" },
     { "name": "Silver Entertainment Ursem", "link": "https://silver-entertainment.nl/", "logo": "" },
-    { "name": "OMC Machineonderhoud De Rijp", "link": "https://omc-machineonderhoud.nl/", "logo": "" },
     { "name": "Caravancentrum Stekelbos Oterleek", "link": "https://www.stekelbos.nl/", "logo": "" },
-    { "name": "Ja-Netwerken Ursem", "link": "https://www.ja-netwerken.nl/", "logo": "" },
     { "name": "ZoganZorg Verhuur sta-op stoelen Schermerhorn", "link": "https://zoganzorg.nl/", "logo": "" },
     { "name": "Kapsalon Jolien Schermerhorn", "link": "https://www.bijjolienkapsalon.nl/", "logo": "" },
     { "name": "Hans Kaijer grafische vormgever", "link": "https://www.kaijervormgeving.nl/", "logo": "" }

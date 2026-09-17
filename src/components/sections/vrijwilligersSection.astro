@@ -48,7 +48,9 @@ const { title, paragraphs, rolesIntro, roles, rolesOutro, benefitsTitle, benefit
         {cta.label}
       </a>
       <p class="tagline">{tagline}</p>
+      <img src={content.vrijwilligers.image.src} alt={content.vrijwilligers.image.alt} class="animate-on-scroll-up" />
     </div>
+
 
   </div>
 </section>
@@ -197,5 +199,11 @@ const { title, paragraphs, rolesIntro, roles, rolesOutro, benefitsTitle, benefit
     font-weight: 700;
     color: var(--clr-primary);
     text-align: center;
+  }
+
+  img {
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+    width: 100%;
   }
 </style>

@@ -31,7 +31,11 @@ const { title, paragraphs, days, notice } = content.programma;
             </svg>
             {day.title}
           </h3>
-          <p>{day.description}</p>
+          <ul>
+            {day.description.map((desc) => (
+              <li set:html={desc} />
+            ))}
+          </ul>
         </article>
       ))}
     </div>

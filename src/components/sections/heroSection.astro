@@ -2,6 +2,7 @@
 import content from '../../data/content.json';
 
 const { badge, title, subtitle, date, location, image, ctas } = content.hero;
+const { text: themeText } = content.themeAnnouncement;
 ---
 
 <section id="over" class="hero">
@@ -15,6 +16,8 @@ const { badge, title, subtitle, date, location, image, ctas } = content.hero;
     <div class="hero-overlay"></div>
     <div class="hero-gradient"></div>
   </div>
+
+  <div class="theme-ribbon" set:html={themeText} />
 
   <div class="container hero-content">
     <div class="hero-inner">
@@ -111,6 +114,36 @@ const { badge, title, subtitle, date, location, image, ctas } = content.hero;
     position: absolute;
     inset: 0;
     /* background: linear-gradient(to top, var(--clr-bg) 0%, transparent 20%); */
+  }
+
+  .theme-ribbon {
+    position: absolute;
+    left: -12%;
+    top: 50%;
+    width: 124%;
+    z-index: 2;
+    transform: translateY(-50%) rotate(-4deg);
+    background: var(--clr-primary);
+    color: var(--clr-primary-fg);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    padding: 1rem 1rem;
+    font-family: var(--ff-heading);
+    font-weight: 700;
+    font-size: clamp(0.85rem, 0.7rem + 1vw, 1.5rem);
+    line-height: 1.3;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .theme-ribbon :global(strong) {
+    display: inline-block;
+  }
+
+  @media (min-width: 640px) {
+    .theme-ribbon {
+      padding: 1.5rem 1rem;
+    }
   }
 
   .hero-content {
